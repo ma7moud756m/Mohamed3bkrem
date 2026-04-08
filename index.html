@@ -1,163 +1,183 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Modern Landing Page</title>
-  <style>
-    * {
-      margin: 0;
-      padding: 0;
-      box-sizing: border-box;
-      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-    }
-
-    body {
-      line-height: 1.6;
-      background: #f5f7fa;
-      color: #333;
-    }
-
-    header {
-      background: linear-gradient(135deg, #4facfe, #00f2fe);
-      color: white;
-      padding: 20px 40px;
-      display: flex;
-      justify-content: space-between;
-      align-items: center;
-    }
-
-    header h1 {
-      font-size: 24px;
-    }
-
-    nav a {
-      color: white;
-      margin-left: 20px;
-      text-decoration: none;
-      font-weight: bold;
-      transition: 0.3s;
-    }
-
-    nav a:hover {
-      opacity: 0.7;
-    }
-
-    .hero {
-      height: 90vh;
-      display: flex;
-      justify-content: center;
-      align-items: center;
-      flex-direction: column;
-      text-align: center;
-      background: linear-gradient(135deg, #667eea, #764ba2);
-      color: white;
-      padding: 20px;
-    }
-
-    .hero h2 {
-      font-size: 48px;
-      margin-bottom: 20px;
-    }
-
-    .hero p {
-      font-size: 18px;
-      margin-bottom: 30px;
-      max-width: 600px;
-    }
-
-    .btn {
-      padding: 12px 25px;
-      border: none;
-      background: white;
-      color: #333;
-      font-weight: bold;
-      border-radius: 25px;
-      cursor: pointer;
-      transition: 0.3s;
-    }
-
-    .btn:hover {
-      background: #ddd;
-    }
-
-    .section {
-      padding: 60px 40px;
-      text-align: center;
-    }
-
-    .section h3 {
-      font-size: 32px;
-      margin-bottom: 20px;
-    }
-
-    .cards {
-      display: flex;
-      justify-content: center;
-      gap: 20px;
-      flex-wrap: wrap;
-    }
-
-    .card {
-      background: white;
-      padding: 20px;
-      border-radius: 15px;
-      width: 250px;
-      box-shadow: 0 10px 20px rgba(0,0,0,0.1);
-      transition: 0.3s;
-    }
-
-    .card:hover {
-      transform: translateY(-10px);
-    }
-
-    footer {
-      background: #222;
-      color: white;
-      text-align: center;
-      padding: 20px;
-    }
-  </style>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Bakery factory</title>
 </head>
+
 <body>
+    <header>
+        <div class="navbar">
+            <div class="logo">
+                <p> Bakery factory </p>
+                <img src="photos/logo.png" alt="">
+            </div>
+            <a href="">Home</a>
+            <a href="">prodects</a>
+            <a href="">contact us</a>
+        </div>
+    </header>
+    <br>
+    <section class="top">
+        <h1>Bakery factory</h1>
+        <p>All you knead is here</p>
+    </section>
 
-<header>
-  <h1>MyWebsite</h1>
-  <nav>
-    <a href="#">Home</a>
-    <a href="#">About</a>
-    <a href="#">Services</a>
-    <a href="#">Contact</a>
-  </nav>
-</header>
+    <section class="products">
+        <div class="product-card">
+            <div class="card-img">
+                <img src="photos/p1.png" alt="White Bread">
+            </div>
+            <div class="card-content">
+                <span class="category">Bakery</span>
+                <h3>Premium White Bread</h3>
+                <p class="desc">Soft and fresh white bread baked daily with high quality flour.</p>
+                <div class="price-box">
+                    <span class="price">15 EGP</span> <span class="unit">/ loaf</span>
+                </div>
+                <a href="#" class="btn card-btn">Add to Cart</a>
+            </div>
+        </div>
+        <div class="product-card">
+            <div class="card-img">
+                <img src="photos/p2.png" alt="Brown Bread">
+            </div>
+            <div class="card-content">
+                <span class="category">Bakery</span>
+                <h3>Whole Wheat Bread</h3>
+                <p class="desc">Healthy brown bread rich in fiber and natural grains.</p>
+                <div class="price-box">
+                    <span class="price">18 EGP</span> <span class="unit">/ loaf</span>
+                </div>
+                <a href="#" class="btn card-btn">Add to Cart</a>
+            </div>
+        </div>
+        <div class="product-card">
+            <div class="card-img">
+                <img src="photos/p3.png" alt="Croissant">
+            </div>
+            <div class="card-content">
+                <span class="category">Pastry</span>
+                <h3>Butter Croissant</h3>
+                <p class="desc">Flaky and golden croissant made with rich butter.</p>
+                <div class="price-box">
+                    <span class="price">12 EGP</span> <span class="unit">/ piece</span>
+                </div>
+                <a href="#" class="btn card-btn">Add to Cart</a>
+            </div>
+        </div>
+        <div class="product-card">
+            
+            <div class="card-img">
+                <img src="photos/p4.png" alt="Buns">
+            </div>
+            <div class="card-content">
+                <span class="category">Bakery</span>
+                <h3>Soft Burger Buns</h3>
+                <p class="desc">Freshly baked soft buns perfect for burgers and sandwiches.</p>
+                <div class="price-box">
+                    <span class="price">30 EGP</span> <span class="unit">/ pack</span>
+                </div>
+                <a href="#" class="btn card-btn">Add to Cart</a>
+            </div>
+        </div>
+        <div class="product-card">
+            
+            <div class="card-img">
+                <img src="photos/p1.png" alt="Cupcake">
+            </div>
+            <div class="card-content">
+                <span class="category">Desserts</span>
+                <h3>Vanilla Cupcake</h3>
+                <p class="desc">Moist vanilla cupcake topped with smooth cream.</p>
+                <div class="price-box">
+                    <span class="price">10 EGP</span> <span class="unit">/ piece</span>
+                </div>
+                <a href="#" class="btn card-btn">Add to Cart</a>
+            </div>
+        </div>
+        <div class="product-card">
+            
+            <div class="card-img">
+                <img src="photos/p2.png" alt="Cookies">
+            </div>
+            <div class="card-content">
+                <span class="category">Bakery</span>
+                <h3>Chocolate Chip Cookies</h3>
+                <p class="desc">Crunchy cookies loaded with rich chocolate chips.</p>
+                <div class="price-box">
+                    <span class="price">25 EGP</span> <span class="unit">/ pack</span>
+                </div>
+                <a href="#" class="btn card-btn">Add to Cart</a>
+            </div>
+        </div>
+        <div class="product-card">
+            
+            <div class="card-img">
+                <img src="photos/p3.png" alt="Cake">
+            </div>
+            <div class="card-content">
+                <span class="category">Desserts</span>
+                <h3>Chocolate Cake</h3>
+                <p class="desc">Rich and moist chocolate cake made with premium cocoa.</p>
+                <div class="price-box">
+                    <span class="price">180 EGP</span> <span class="unit">/ cake</span>
+                </div>
+                <a href="#" class="btn card-btn">Add to Cart</a>
+            </div>
+        </div>
+        <div class="product-card">
+            
+            <div class="card-img">
+                <img src="photos/p4.png" alt="Bagel">
+            </div>
+            <div class="card-content">
+                <span class="category">Bakery</span>
+                <h3>Sesame Bagel</h3>
+                <p class="desc">Freshly baked bagel topped with roasted sesame seeds.</p>
+                <div class="price-box">
+                    <span class="price">8 EGP</span> <span class="unit">/ piece</span>
+                </div>
+                <a href="#" class="btn card-btn">Add to Cart</a>
+            </div>
+        </div>
+        <div class="product-card">
+            
+            <div class="card-img">
+                <img src="photos/p1.png" alt="Toast Bread">
+            </div>
+            <div class="card-content">
+                <span class="category">Bakery</span>
+                <h3>Toast Bread</h3>
+                <p class="desc">Perfectly sliced toast bread ideal for breakfast.</p>
+                <div class="price-box">
+                    <span class="price">20 EGP</span> <span class="unit">/ loaf</span>
+                </div>
+                <a href="#" class="btn card-btn">Add to Cart</a>
+            </div>
+        </div>
+        <div class="product-card">
+            
+            <div class="card-img">
+                <img src="photos/p2.png" alt="Pie">
+            </div>
+            <div class="card-content">
+                <span class="category">Desserts</span>
+                <h3>Apple Pie</h3>
+                <p class="desc">Classic apple pie with a crispy crust and cinnamon flavor.</p>
+                <div class="price-box">
+                    <span class="price">45 EGP</span> <span class="unit">/ piece</span>
+                </div>
+                <a href="#" class="btn card-btn">Add to Cart</a>
+            </div>
+        </div>
+    </section>
 
-<section class="hero">
-  <h2>Welcome to My Website</h2>
-  <p>A clean and modern single-page website built using HTML and CSS only.</p>
-  <button class="btn">Get Started</button>
-</section>
-
-<section class="section">
-  <h3>Our Services</h3>
-  <div class="cards">
-    <div class="card">
-      <h4>Web Design</h4>
-      <p>Beautiful and responsive designs for your business.</p>
-    </div>
-    <div class="card">
-      <h4>Development</h4>
-      <p>High-quality code with modern technologies.</p>
-    </div>
-    <div class="card">
-      <h4>Support</h4>
-      <p>We are here to help you anytime you need.</p>
-    </div>
-  </div>
-</section>
-
-<footer>
-  <p>© 2026 MyWebsite. All rights reserved.</p>
-</footer>
+    <footer></footer>
 
 </body>
+
 </html>
